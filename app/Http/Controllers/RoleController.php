@@ -25,8 +25,8 @@ class RoleController extends Controller
     }
     public function edit(Request $request,$id)
     {
-        $user = User::with('roles')->findOrFail( $id );
-        $roles = Role::all();
+            $user = User::with('roles')->findOrFail( $id );
+            $roles = Role::all();
 
 
        // $selected_vals = User::with('roles')->get();
