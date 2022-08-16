@@ -59,6 +59,7 @@
       @endforeach
       </td>
       <td><a href="{{url('edit_record/'.$role_names->id)}}">edit</a></td>
+      <td><a href="{{url('delete_record/'.$role_names->id)}}">Delete{{$role_names->id}}</a></td>
     </tr>
     @endforeach
     @endif

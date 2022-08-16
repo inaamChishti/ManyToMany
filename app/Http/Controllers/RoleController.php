@@ -65,4 +65,17 @@ class RoleController extends Controller
       
        
     }
+
+    public function delete(Request $request, $id)
+    {
+         $user = User::find($id);
+
+         //dd($user);
+         $role = User::with('roles')->findOrFail($id);
+         // dd($role);
+         $user->roles()->detach($role->roles);
+        //$product->categories()->detach($category);
+        
+        return 'Success';
+    }
 }

@@ -25,3 +25,4 @@ Route::post('role_store',[RoleController::class,'store']);
 Route::get('edit_record/{id}',[RoleController::class,'edit']);
 Route::post('update_role',[RoleController::class,'update']);
 Route::post('assign_role',[RoleController::class,'assign_role']);
+Route::get('delete_record/{id}',[RoleController::class,'delete']);
